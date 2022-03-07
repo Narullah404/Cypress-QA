@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+// Tests for 'POST' methods
 context('API: POST', () => {
 
 	it('Create new user, empty parameters should result in correct response body property error', () => {
@@ -61,7 +62,7 @@ context('API: POST', () => {
 
 })
 
-
+// Tests for 'GET' methods
 context('API: GET', () => {
 	
 	it('List all users response code should be 200', () =>{
@@ -104,6 +105,7 @@ context('API: GET', () => {
 
 })
 
+// Tests for 'PUT' methods
 context('API: PUT', () => {
 
 	it('Update: response code 202, and have correct properties in response body', () => {
@@ -156,6 +158,7 @@ context('API: PUT', () => {
 
 })
 
+// Tests for 'DELETE' methods
 context('API: DELETE', () => {
 
 	it('Delete a user should result in correct response 202: no response', () => {
